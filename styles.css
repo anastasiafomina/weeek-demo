@@ -1,0 +1,633 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff url(./images/pt.png) -24px top repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+.container {
+  background: url('./images/background-1.png') top no-repeat;
+ 
+}
+
+.content {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .content {
+    width: 1200px;
+  }
+}
+
+/* Alignment */
+.center-align {
+  text-align: center;
+  align-items: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.align-end {
+  align-self: flex-end
+}
+
+/* Header */
+
+header{
+  position: fixed;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+  transition: all 0.3s ease, padding 0s ease;
+  z-index: 999;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .header-nav  {
+    flex-direction: row;
+  }
+}
+
+.header-nav-active{
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 14px 28px rgba(129,130,160,0.05), 0 10px 10px rgba(129,130,160,0.22);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+}
+
+.menu-item {
+  margin-bottom: 10px;
+  margin-left: 50px;
+  font-size: 20pх;
+  color: rgb(136, 141, 168);
+  background-color: blueviolet;
+}
+
+@media (min-width: 768px) {
+  .menu-item {
+    margin-bottom: 0;
+  }
+}
+
+.active-menu-item {
+  color: rgb(103, 136, 243);
+}
+
+.header-control {
+  display: flex;
+  align-items: center;
+}
+
+.languages {
+  display: flex;
+}
+
+.language-item {
+  margin-left: 40px;
+  font-size: 20pх;
+  color: rgb(136, 141, 168);
+}
+
+.active-language {
+  color: rgb(26, 43, 79);
+}
+
+.login-button {
+  display: none;
+}
+
+@media (min-width: 768px) { 
+  .login-button {
+    display: flex;
+    width: 70px;
+    height: 25px;
+    padding-left: 12px;
+    font-size: 20pх;
+    color: rgb(136, 141, 168);
+    background-color: rgb(243, 244, 249);
+    border: 1px solid rgb(103, 136, 243);
+    border-radius: 4px;
+  }
+}
+
+/* Main-page */
+.intro-section {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+.large-screen {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .large-screen {
+    display: block;
+  }
+}
+
+.name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 30px;
+  color: rgb(26, 43, 79);
+}
+
+.description {
+  font-family: "SFUIDisplay-Regular"; 
+  line-height: 1.375;
+  position: relative;
+  padding-bottom: 40px; 
+  font-size: 16px;
+  color: rgb(136, 141, 168);
+}
+
+.intro-button {
+  height: 45px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(103, 136, 243);
+}
+
+.button-shadow {
+  box-shadow: 0px 7px 15px 0px rgba(103, 136, 243, 0.25);
+}
+
+.begin-button {
+  width: 260px;
+  text-align: center;
+  border: 1px solid rgb(103, 136, 243);
+  border-radius: 30px;
+}
+
+.large-begin-button {
+  height: 55px;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(103, 136, 243);
+}
+
+.bordered-button {
+  height: 55px;
+  color: rgb(103, 136, 243);
+}
+
+.button-margin {
+  margin: 0 15px 20px;
+}
+
+/* Overview */
+
+.overview-section {
+  padding-top: 120px;
+}
+
+.screens{
+  position: relative;
+  padding-right: 70px;
+}
+
+.white-screen {
+  position: absolute;
+  top: -30px;
+  left: 70px;
+}
+
+.info-container {
+  display: flex;
+  flex-flow: column;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .info-container {
+    flex-flow: row;
+    padding-bottom: 160px;
+    text-align: left;
+  }
+}
+
+.center-info-container {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .center-info-container {
+    padding-bottom: 160px;
+  }
+}
+
+.left-img{
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .left-img {
+    margin-right: 30px;
+  }
+}
+
+.right-img {
+  flex: none;
+  width: 390px;
+  align-self: center;
+}
+
+.left-desc {
+  padding-right: 30px;
+}
+
+.img-push {
+  display: flex;
+  flex: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+  width: 330px;
+  height: 120px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255); 
+  box-shadow: 0px 0px 9px 0px rgba(123, 119, 119, 0.17);
+}
+
+.push-desc {
+  padding-left: 30px;
+  font-size: 16px;
+  color: rgb(26, 43, 79);
+}
+
+.phone-mark {
+  width: 34px;
+  height: 34px;
+}
+
+.phrase-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-phrase{
+  position: absolute;
+  font: 900 136px 'Montserrat', sans-serif;
+  color: rgb(249, 249, 252);
+  top: -8px;
+}
+
+/* Tariff plan */
+.tariffs-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(243, 244, 249);
+}
+
+.tariffs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tariff-container {
+  padding-bottom: 45px;
+  margin-top: 45px;
+  position: relative;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  min-width: 350px;
+}
+
+.margin-right {
+  margin-right: 30px;
+}
+
+.tariff-name {
+  padding-top: 45px;
+  font-size: 24px;
+  color: rgb(26, 43, 79);
+  font-weight: bold;
+  text-align: center;
+}
+
+.price {
+  font-size: 36px;
+  color: rgb(103, 136, 243);
+  font-weight: bold;
+}
+
+.period {
+  font-size: 20px;
+  color: rgb(136, 141, 168);
+}
+
+.recommend {
+  position: absolute;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: rgb(243, 103, 149);
+  width: 100px;
+  height: 30px;
+  right: 0;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.recommend-phrase {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.conditions {
+  margin: 0;
+  padding: 0;
+  height: 300px;
+}
+
+.conditions li {
+  padding-top: 25px;
+  list-style-type: none;
+}
+
+
+/* Feedback */
+
+.feedback-section {
+  padding: 70px 0 140px;
+}
+
+.quotation-mark {
+  margin-bottom: 30px;
+  width: 41px;
+  height: 27px;
+}
+
+.decor-line {
+  position: absolute;
+  height: 3px;
+  background: #F2F2F8;
+  width: 100%;
+  bottom: 120px;
+}
+
+
+.arrow-button {
+  align-self: center;
+  height: 35px;
+  width: 17px;
+  cursor: pointer;
+  opacity: 0.5;  
+  background-image: url('./images/arrow.png') ;
+  background-size: cover;
+  border: none;
+}
+
+.arrow-next {
+  transform: rotate(180deg);
+}
+
+.mark {
+  padding-right: 5px;
+  color: rgb(103, 136, 243);
+}
+
+.fb-name {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(26, 43, 79); 
+  height: 30px; 
+}
+
+.fb-info {
+  height: 60px; 
+  font-size: 14px;
+  font-family: "SFUIDisplay-Regular"; 
+  line-height: 1.375;
+  color: rgb(136, 141, 168);
+}
+
+.container-padding {
+  padding-bottom: 30px;
+}
+
+.feedback-slider {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo-container {
+  margin: 5px;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(39, 49, 64);
+}
+
+.top-footer {
+  padding-top: 45px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(63, 74, 90);
+  background-color: yellow;
+}
+
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+}
+
+@media (min-width: 768px) {
+  .input-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-input {
+  margin-right: 30px;
+  padding-left: 30px;
+  height: 50px;
+  width: calc(100% - 32px);
+  color: rgb(143, 152, 164);
+  font-size: 16px;
+  border: 1px solid rgb(57, 68, 83);
+  border-radius: 30px;
+  background-color: rgb(57, 68, 83);
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-input {
+    flex-direction: row;
+    max-width: 250px;
+    margin-top: 0;
+  }
+}
+
+.footer-input::-webkit-input-placeholder {color:rgb(143, 152, 164);}
+.footer-input::-moz-placeholder          {color:rgb(143, 152, 164);}
+.footer-input:-moz-placeholder           {color:rgb(143, 152, 164);}
+.footer-input:-ms-input-placeholder      {color:rgb(143, 152, 164);}
+
+.textarea-wrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-top: 17px;
+  color: rgb(143, 152, 164);
+  font-size: 16px;
+  border-radius: 30px;
+  background-color: rgb(57, 68, 83);
+  resize: none;
+  border: 1px solid rgb(57, 68, 83);
+  width: 100%;
+  height: 100px;
+}
+
+@media (min-width: 768px) {
+  .textarea-wrapper {
+    margin: 0;
+    margin-right: 30px;
+    width: 240px;
+    height: 50px;
+  }
+}
+
+.textarea-wrapper::-webkit-input-placeholder {color:rgb(143, 152, 164);}
+.textarea-wrapper::-moz-placeholder          {color:rgb(143, 152, 164);}
+.textarea-wrapper:-moz-placeholder           {color:rgb(143, 152, 164);}
+.textarea-wrapper:-ms-input-placeholder      {color:rgb(143, 152, 164);}
+
+.offer {
+  font: 300 20px 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .offer {
+    padding-bottom: 25px;
+  }
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 25px 0;
+  background-color: pink;
+}
+
+@media (min-width: 920px) {
+  .bottom-footer {
+    flex-direction: row;
+  }
+}
+
+.menu-item-white {
+  color: rgb(255, 255, 255);
+}
+
+.menu-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 920px) {
+  .menu-bottom {
+    flex-direction: row;
+  }
+}
+
+.send-button {
+  width: 170px;
+  height: 50px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(103, 136, 243);
+  text-align: center;
+  border: 1px solid rgb(103, 136, 243);
+  border-radius: 30px;
+  align-self: center;
+}
+
+.network {
+  padding-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  width: 40px;
+  height: 32px;
+  padding-left: 70px;
+  color: rgb(143, 152, 164);
+  background-color: red;
+}
+
+.footer-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+}
+
+.social {
+  padding: 10px;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Regular"; 
+  src: url("./fonts/SFUIDisplay-Regular.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
